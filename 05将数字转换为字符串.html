@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String方法可以将数字转换为字符串</title>
+    <!-- 该方法可用于任何类型的数字、字母、变量、表达式 -->
+</head>
+
+<body>
+
+    <p> String() 方法可以将数字转换为字符串。</p>
+    <p id="demo"></p>
+    <script>
+        var x = 123;
+        document.getElementById("demo").innerHTML =
+            String(x) + "<br>" +
+            String(123) + "<br>" +
+            String(100 + 23);
+    </script>
+</body>
+
+</html>

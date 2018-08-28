@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>typeof操作符返回JavaScript变量的数据类型</title>
+</head>
+
+<body>
+    <h1>typeof操作符返回变量、对象、函数、表达式的类型</h1>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML =
+            typeof "john" + "</br>" + //string
+            typeof NaN + "<br>" + //number
+            typeof false + "<br>" + //boolean
+            typeof [1, 2, 3, 4] + "<br>" + //object
+            typeof { //object
+                name: 'john',
+                age: 34
+            } + "<br>" +
+            typeof new Date() + "<br>" + //object 
+            typeof
+
+        function() {} + "<br>" + //function 
+        typeof myCar + "<br>" + //undefined    
+            typeof null; //object
+    </script>
+</body>
+
+</html>

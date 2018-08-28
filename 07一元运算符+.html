@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operator + 可用于将变量转换为数字</title>
+</head>
+
+<body>
+    <p> typeof 操作符返回变量或表达式的类型。</p>
+    <button onclick="myFunction()">点我</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var y = "5";
+            var x = +y; //这个表达式将字符串y通过一元运算符+ 转换成数字，赋值给x
+            console.log(x); //x=5;
+            document.getElementById("demo").innerHTML =
+                typeof y + "<br>" + typeof x;
+        }
+    </script>
+</body>
+
+</html>

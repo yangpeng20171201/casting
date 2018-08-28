@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自动类型转换</title>
+</head>
+
+<body>
+    <script>
+        //字符串优先级最高，其次是算法运算
+        5 + null // 返回 5         because null is converted to 0
+            "5" + null // 返回"5null"   because null is converted to "null" 
+            "5" + 1 // 返回 "51"      because 1 is converted to "1"  
+            "5" - 1 // 返回 4         because "5" is converted to 5
+    </script>
+</body>
+
+</html>
